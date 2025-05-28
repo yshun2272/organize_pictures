@@ -14,6 +14,9 @@ logging.basicConfig(
     ]
 )
 
+# Set the working directory to the Pictures folder
+os.chdir(r"C:\\Users\\yshun\\OneDrive\\Pictures")
+
 def check_exiftool():
     """Check if ExifTool is installed."""
     try:
@@ -112,7 +115,7 @@ def organize_pictures():
                 
                 for ext in image_extensions:
                     test_file = f"{index}{ext}"
-                    test_path = os.path.join(pictures_dir, test_file)
+                    test_path = test_file
                     if os.path.isfile(test_path):
                         current_file = test_file
                         current_path = test_path
@@ -132,7 +135,7 @@ def organize_pictures():
                     suggested_name += ext
                 
                 # Construct paths
-                area_dir = os.path.join(pictures_dir, area)
+                area_dir = area
                 new_path = os.path.join(area_dir, suggested_name)
                 
                 print(f"Processing file {index}/{total_files}: {current_file} -> {suggested_name}")
@@ -198,8 +201,8 @@ def organize_pictures():
             for err in error_files:
                 print(f"- {err}")
             
-            # Write errors to a file
-            with open('picture_errors.txt', 'w') as f:
+            # Write errors to a file in the Pictures directory
+            with open(error_file, 'w') as f:
                 f.write(f"Picture organization errors - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
                 for err in error_files:
                     f.write(f"- {err}\n")
