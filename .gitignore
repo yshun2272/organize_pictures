@@ -30,4 +30,9 @@ $RECYCLE.BIN/
 .vscode/
 .idea/
 *.swp
-*.swo 
+*.swo
+
+# Log files
+*.log
+picture_organization.log
+rename_process.log 
