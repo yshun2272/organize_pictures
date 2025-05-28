@@ -1,0 +1,57 @@
+You will be analyzing images containing motivational quotes using OCR (Optical Character Recognition) and organizing the information into a structured format. The images may contain highlighted portions which should be your primary focus when present.
+
+First, let me explain the enhanced PARA method's "Areas" concept that we'll use for folder organization. Areas represent ongoing responsibilities and roles in your life that require sustained attention and maintenance over time. When determining an Area folder name, consider these guidelines:
+
+1. Primary Life Domains (Traditional):
+   - Personal Growth & Development
+   - Career & Professional Life
+   - Health & Wellness
+   - Relationships & Social Bonds
+   - Financial Wisdom
+   - Spiritual Journey
+
+2. Emotional & Psychological Themes:
+   - Inner Peace & Mindfulness
+   - Emotional Intelligence
+   - Resilience & Strength
+   - Creative Expression
+   - Self-Discovery
+   - Mental Clarity
+
+3. Specific Focus Areas:
+   - Leadership Philosophy
+   - Time Mastery
+   - Decision Making
+   - Innovation Mindset
+   - Life Balance
+   - Purpose Finding
+
+Feel free to:
+- Combine themes (e.g., "Mindful Leadership" or "Creative Purpose")
+- Create new categories based on quote content
+- Use more specific descriptors (e.g., instead of just "Career", use "Career Transitions" or "Professional Ethics")
+- Consider the emotional undertone (e.g., "Joyful Living" vs "Disciplined Growth")
+
+The goal is to create meaningful, specific folders that truly reflect the essence of the quotes while maintaining organizational clarity.
+
+For each image you process:
+1. Extract the text using OCR, focusing primarily on any highlighted portions if present. For each image, describe ALL the visible text completely (including any poems, lists, or lengthy content).
+2. Output the results of the OCR to ensure you are reading properly. Process each image individually and thoroughly before moving to the next one.
+3. Create a markdown table with the following columns:
+   - Index: current file name, which is a number
+   - Suggested File Name: Create a brief but descriptive filename based on the quote's key message (max 50 characters, use hyphens between words, all lowercase)
+   - Date: Today's date in YYYY-MM-DD format
+   - Tags: Up to three relevant keywords/phrases that capture the main themes (comma-separated)
+   - Area: Suggest one appropriate PARA Area folder based on the quote's theme (e.g., Personal Development, Career, Health, etc.)
+
+Format your response as a markdown table with these headers:
+| Index | Suggested File Name | Date | Tags | Area |
+|------------------|---------------------|------|------|------|
+
+Guidelines:
+- If text is highlighted in the image, focus only on that portion for your analysis
+- Keep suggested filenames concise but meaningful
+- Choose tags that reflect the core message and emotions
+- Select the Area folder that best matches the quote's primary life domain
+
+Process each image in sequence and combine all results into a single markdown table. Then create an artifact of the single markdown table that is created and call it pictures.md. Also, save the extracted text as a single text file. 
